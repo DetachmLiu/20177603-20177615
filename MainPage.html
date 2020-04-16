@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>学术家族树结构</title>
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <imge href="dist/pic/1.jpg"/>
+    <style type="text/css">
+    body{
+        height: 100%;
+        width: 100%;
+        background-image:url(dist/pic/1.jpg);
+        background-size: cover;
+        background-repeat:no-repeat;
+    }
+    .font1{
+        color:white;
+        font-family:verdana,serif;
+        font-size:25px;
+    }
+    div{padding:18px}
+    img{border:0;vertical-align:middle;padding:0;margin:0;}
+    input, button{font-family:"Arial", "Tahoma", "微软雅黑", "雅黑",serif;border:0;
+    vertical-align:middle;margin:16px;line-left:18px;font-size:18px;}
+    .btn{width:100px;height:36px;font-size:18px;background:url(dist/pic/2.jpg) no-repeat left top;color:#FFF;padding-bottom:-1px;}
+
+    </style>
+
+</head>
+<body>
+    <div style="text-align:center" >
+        <div class="font1">学术家族树输入</div>
+        <textarea id="val"style="width: 235px;margin: 0px;padding: 5px;height:150px"></textarea>
+        <div>
+            <input type="button" class="btn" value="确定" onmouseover="this.style.backgroundPosition='left -36px'"
+                   onmouseout="this.style.backgroundPosition='left top'" onclick="getData()"/>
+        </div>
+    </div>
+
+    <div id="tree">
+    </div>
+
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/treeview.js"></script>
+    <script src="dist/js/getJson.js"></script>
+</body>
+</html>
